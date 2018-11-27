@@ -1,42 +1,51 @@
-![CF](http://i.imgur.com/7v5ASc8.png) LAB
+![CF](http://i.imgur.com/7v5ASc8.png) LAB 29
 =================================================
 
-## Project Name
+## Component Composition
 
-### Author: Student/Group Name
+### Katherine Smith
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
-* [back-end](http://xyz.com)
-* [front-end](http://xyz.com)
+* [Assignment 1](https://codesandbox.io/s/6lj08y725r)
+* [Assignment 2](https://codesandbox.io/s/24v5r87xpn)
 
-### Modules
-#### `modulename.js`
-##### Exported Values and Methods
+---
+### Assignment 1
+#### App Component
+- Passes `<span>` tags to Stuff component
+- Renders Stuff component
 
-###### `foo(thing) -> string`
-Usage Notes or examples
+#### Stuff Component
+- Passes `<span>` tags to Things component using children property
+- Renders Things component
 
-###### `bar(array) -> array`
-Usage Notes or examples
-
-### Setup
-#### `.env` requirements
-* `PORT` - Port Number
-* `MONGODB_URI` - URL to the running mongo instance/db
-
-#### Running the app
-* `npm start`
-* Endpoint: `/foo/bar/`
-  * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
-  * Returns a JSON object with xyz in it.
-
-#### Tests
-* How do you run tests?
-* What assertions were made?
-* What assertions need to be / should be made?
+#### Things Component
+- Renders `<span>` tags using children property
 
 #### UML
-Link to an image of the UML for your application and response to events
+<img src="./lab-29-assignment-1.jpg" alt="lab-29-assignment-1.jpg" width="500px">
+
+---
+### Assignment 2
+#### App Component
+- Passes `<span>` tags to FunctionalStuff component
+- Renders FunctionalStuffStuff component
+- Passes `<span>` tags to ClassStuff component
+- Renders ClassStuff component
+
+#### FunctionalStuff Component
+- Passes `<span>` tags to FunctionalThings component using children property
+- Renders FunctionalThings component
+
+#### FunctionalThings Component
+- Renders `<span>` tags using children property
+
+#### ClassStuff Component
+- Passes `<span>` tags to ClassThings component using children property
+- Renders ClassThings component
+
+#### ClassThings Component
+- Renders `<span>` tags using children property
+
+#### UML
+<img src="./lab-29-assignment-2.jpg" alt="lab-29-assignment-2.jpg" width="500px">
